@@ -1,0 +1,10 @@
+tree:
+  -
+    title: Blog
+    url: /blog
+  -
+    title: Shop
+    url: /shop
+  -
+    title: Guides
+    url: /guides
