@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'enabled' => env('STATAMIC_GIT_ENABLED', false),
+    'enabled' => env('STATAMIC_GIT_ENABLED', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -71,11 +71,11 @@ return [
     |
     */
 
-    'use_authenticated' => true,
+    'use_authenticated' => false,
 
     'user' => [
-        'name' => env('STATAMIC_GIT_USER_NAME', 'Spock'),
-        'email' => env('STATAMIC_GIT_USER_EMAIL', 'spock@example.com'),
+        'name' => env('STATAMIC_GIT_USER_NAME', 'Monika'),
+        'email' => env('STATAMIC_GIT_USER_EMAIL', 'monika.hoex@adroll.com'),
     ],
 
     /*
@@ -126,7 +126,7 @@ return [
 
     'commands' => [
         'git add {{ paths }}',
-        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }}"',
+        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [BOT]"',
     ],
 
     /*
