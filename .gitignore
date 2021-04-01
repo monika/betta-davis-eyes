@@ -12,3 +12,22 @@ node_modules
 npm-debug.log
 .sass-cache
 .nova/Configuration.json
+
+# From Statamic/statamic settings
+/node_modules
+/public/hot
+/public/img/containers/*
+/public/storage
+/public/vendor/statamic
+/storage/*.key
+/storage/forms
+/vendor
+.env
+.env.backup
+.env.example
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+content/collections/pages/test.md
