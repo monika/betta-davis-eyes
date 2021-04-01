@@ -1,4 +1,4 @@
-admin:
-  title: Admin
+site_admin:
+  title: 'Site Admin'
   permissions:
     - super
