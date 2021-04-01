@@ -71,7 +71,7 @@ return [
     |
     */
 
-    'use_authenticated' => false,
+    'use_authenticated' => true,
 
     'user' => [
         'name' => env('STATAMIC_GIT_USER_NAME', 'Monika'),
@@ -126,7 +126,7 @@ return [
 
     'commands' => [
         'git add {{ paths }}',
-        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }}"',
+        'git -c "user.name={{ name }}" -c "user.email={{ email }}" commit -m "{{ message }} [AUTO]"',
     ],
 
     /*
@@ -140,7 +140,7 @@ return [
     |
     */
 
-    'push' => env('STATAMIC_GIT_PUSH', false),
+    'push' => env('STATAMIC_GIT_PUSH', true),
 
     /*
     |--------------------------------------------------------------------------
