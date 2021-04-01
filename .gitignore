@@ -1,17 +1,4 @@
 .DS_Store
-node_modules/
-bower_components/
-local/cache/*
-local/storage/*
-local/temp/*
-static/*
-.env
-vendor/*
-
-node_modules
-npm-debug.log
-.sass-cache
-.nova/Configuration.json
 
 # From Statamic/statamic settings
 /node_modules
