@@ -107,6 +107,16 @@ sections:
           required: true
           validate:
             - required
+          listable: hidden
+          mode: single
+          time_enabled: true
+          time_required: true
+          earliest_date: '2018-01-01'
+          format: 'ddd, MMM Do YYYY, h:mm a'
+          full_width: false
+          inline: false
+          columns: 1
+          rows: 1
       -
         handle: author
         field:
@@ -116,3 +126,20 @@ sections:
           listable: true
           display: Author
           default: current
+      -
+        handle: parent
+        field:
+          type: entries
+          collections:
+            - blog
+          max_items: 1
+          listable: false
+          localizable: true
+      -
+        handle: breeds
+        field:
+          type: terms
+          taxonomies:
+            - breeds
+          display: Breeds
+          mode: select
